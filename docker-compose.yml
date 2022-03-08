@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  test-runner:
+    command: /app/test/example1.sh
+    build: .
+    volumes:
+      - .:/app
+    tty: true
+    stdin_open: true
